@@ -1,18 +1,17 @@
 | [home page](https://cmustudent.github.io/tswd-portfolio-templates/) | [data viz examples](dataviz-examples) | [critique by design](critique-by-design) | [final project I](final-project-part-one) | [final project II](final-project-part-two) | [final project III](final-project-part-three) |
 
-# Title
-Text here...
-
-_For each step below, you should document your progress as you move forward.  In terms of tone, think of the writeup as though you're keeping journal of your step-by-step process.   You should include a any insights you gained from the critique method, and what it led you to think about when considering the redesign.  You should talk about how you moved next to the sketches, and any insights you gleaned from your user feedback.  Document what you changed based on the user feedback in your redesign.  Finally, talk about what your redesigned data visualization shows, why you selected the data visualization you did, and what you attempted to show or do differently._
-
-_You can include screenshots, sketches or other artifacts with your narrative to help tell the story of how you moved through the process.  Again, make sure to avoid including any personally identifying information about your interviewees (don't list full names, etc.).  While this template serves as a guide, make sure to reference the assignment writeup on Canvas for the official guidance.  This template does not include all guidance mentioned on the assignment page._
+# Critique by Design: Natural Disaster Deaths
 
 ## Step one: the visualization
 
-_Include link to the original data visualization (or screenshot - make sure to correctly cite your sources, etc.).  Include paragraph or two on why you selected this particular data visualization.  For obvious reasons, the data visualization you select should come from a publicly accessible source._
+Original visualization: [Decadal average: Number of deaths from natural disasters, World(https://ourworldindata.org/natural-disasters)  
+Source: Our World in Data, EM-DAT, CRED / UCLouvain (2025)
+I selected this chart because it covers a topic that is globally relevant and visually striking. The original chart uses a stacked bar chart with 11 different colors to show annual average disaster deaths by type from 1900 to 2020. I was immediately drawn to it because while the overall downward trend in deaths is clear, the excessive number of colors made it very difficult to understand which types of disasters were driving the changes. I wanted to redesign it to tell a clearer and more specific story about how the nature of disaster deaths has shifted over the past century.
 
 ## Step two: the critique
-_Don't forget to complete the Google Form found on the assignment page.  You can summarize your thoughts here._
+I completed the Stephen Few Data Visualization Effectiveness Profile for this chart. The chart scored well on truthfulness and usefulness, the data is from a reliable source and the overall downward trend is clear. However, 
+it scored poorly on perceptibility and intuitiveness. The use of 11 different colors, many of which are visually similar shades of grey and brown, makes it nearly impossible to distinguish individual disaster types within the stacked bars. The chart communicates the total trend effectively but fails to clearly show how the composition of disaster deaths has changed over time. This insight led me to think about redesigning the chart to focus 
+on proportions rather than absolute numbers.
 
 ## Step three: Sketch a solution
 

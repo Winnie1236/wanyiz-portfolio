@@ -20,9 +20,9 @@ Based on my critique, I decided to move away from showing absolute death numbers
 
 | Question | Interview 1 | Interview 2 |
 |----------|-------------|-------------|
-|  Is there anything surprising or confusing?        |      The stacking order is confusing, colored categories should be at the bottom       |     The title could more explicitly highlight the decline of droughts and floods        |
+|  Can you tell me what you think this is?        |      A chart showing how different types of disasters contributed to deaths over time       |     A chart about how disaster death composition has changed across decades        |
+|  Is there anything surprising or confusing?      |     The stacking order is confusing, colored categories should be at the bottom        |    The title could more explicitly highlight the decline of droughts and floods         |
 |    Is there anything you would change?      |     Move colored categories to the bottom for easier comparison        |    Focus more explicitly on the positive story of progress         |
-|          |             |             |
 
 Synthesis: 
 Both interviewees understood the main message of the chart. A common pattern was that the stacking order could be improved to make comparisons easier across decades. The second interviewee's suggestion to more explicitly 

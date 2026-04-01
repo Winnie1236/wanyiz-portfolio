@@ -4,32 +4,31 @@
 
 ## Step one: the visualization
 
-Original visualization: [Decadal average: Number of deaths from natural disasters, World(https://ourworldindata.org/natural-disasters)  
+Original visualization: [Decadal average: Number of deaths from natural disasters, World](https://ourworldindata.org/natural-disasters)  
 Source: Our World in Data, EM-DAT, CRED / UCLouvain (2025)
 I selected this chart because it covers a topic that is globally relevant and visually striking. The original chart uses a stacked bar chart with 11 different colors to show annual average disaster deaths by type from 1900 to 2020. I was immediately drawn to it because while the overall downward trend in deaths is clear, the excessive number of colors made it very difficult to understand which types of disasters were driving the changes. I wanted to redesign it to tell a clearer and more specific story about how the nature of disaster deaths has shifted over the past century.
 
 ## Step two: the critique
-I completed the Stephen Few Data Visualization Effectiveness Profile for this chart. The chart scored well on truthfulness and usefulness, the data is from a reliable source and the overall downward trend is clear. However, 
-it scored poorly on perceptibility and intuitiveness. The use of 11 different colors, many of which are visually similar shades of grey and brown, makes it nearly impossible to distinguish individual disaster types within the stacked bars. The chart communicates the total trend effectively but fails to clearly show how the composition of disaster deaths has changed over time. This insight led me to think about redesigning the chart to focus 
-on proportions rather than absolute numbers.
+I completed the Stephen Few Data Visualization Effectiveness Profile for this chart. The chart scored well on truthfulness and usefulness, the data comes from a reliable source and the overall downward trend in deaths is 
+clear. However, it scored poorly on perceptibility and intuitiveness. The use of 11 different colors, many of which are visually similar shades of grey and brown, makes it nearly impossible to distinguish individual disaster types within the stacked bars. Additionally, the title is purely descriptive and does not guide the reader toward any particular insight. The chart communicates the total trend effectively but fails to show how the composition of disaster deaths has changed over time.
 
 ## Step three: Sketch a solution
-Based on my critique, I decided to move away from showing absolute death numbers and instead focus on the share of deaths by disaster type. I sketched a 100% stacked bar chart that would group minor disaster categories into a single "Other" category, leaving only four groups: Droughts, Floods, Earthquakes, and Other. This would reduce the color count from 11 to 4, making the chart much easier to read. I built an early draft in Tableau to test this approach before finalizing the design.
+Based on my critique, I built an initial draft in Tableau using the same stacked bar chart format as the original, but with significant simplifications. I reduced the color scheme to highlight only three key disaster types: Droughts (orange), Floods (blue), and Earthquakes (teal) — while keeping all other categories in grey. I also rewrote the title to make a clear argument: "Droughts and Floods Dominated Disaster Deaths in the 20th Century." This version kept the absolute death numbers on the Y axis, making the dramatic decline in total deaths visible.
+![Step 3  Initial Visualization Sketch](Step3.jpeg)
 
 ## Step four: Test the solution
 
-| Question | Interview 1 | Interview 2 |
+| Question | Interview 1 (from AI-MSE) | Interview 2 (from MISM ) |
 |----------|-------------|-------------|
-|  Can you tell me what you think this is?        |      A chart showing how different types of disasters contributed to deaths over time       |     A chart about how disaster death composition has changed across decades        |
-|  Is there anything surprising or confusing?      |     The stacking order is confusing, colored categories should be at the bottom        |    The title could more explicitly highlight the decline of droughts and floods         |
-|    Is there anything you would change?      |     Move colored categories to the bottom for easier comparison        |    Focus more explicitly on the positive story of progress         |
+|  Can you tell me what you think this is?        |      A chart showing disaster deaths over time by type       |     A chart about how different disasters have killed people across decades        |
+|  Is there anything surprising or confusing?      |     The stacking order is confusing, colored categories should be at the bottom        |    The chart shows total deaths well but doesn't show how the proportions changed         |
+|    Is there anything you would change?      |     Move colored categories to the bottom for easier comparison        |    Focus more on showing the shift in proportions rather than absolute numbers may be better         |
 
 Synthesis: 
-Both interviewees understood the main message of the chart. A common pattern was that the stacking order could be improved to make comparisons easier across decades. The second interviewee's suggestion to more explicitly 
-highlight the decline of droughts and floods was particularly valuable, as this is the most striking finding in the data. Based on this feedback, I considered reordering the stacked categories and refining the title to more 
-clearly communicate the story of human progress in disaster resilience.
+Both interviewees understood the overall downward trend in deaths. However, a key insight emerged from the second interviewee: showing absolute numbers was less effective at communicating the most interesting story, that the 
+types of disasters killing people have fundamentally changed. The first interviewee also pointed out that the stacking order made comparisons difficult. Based on this feedback, I decided to switch to a 100% stacked bar chart, which would show the share of deaths by disaster type rather than absolute numbers, making the compositional shift much clearer.
 ## Step five: build the solution
-My final redesign is a 100% stacked bar chart built in Tableau Public. Compared to the original, it uses only four color categories, making the composition of disaster deaths easy to read at a glance. The chart clearly 
+Taking the feedback into account, I rebuilt the visualization as a 100% stacked bar chart. I also grouped all minor disaster categories into a single "other" category, reducing the color count from 11 to 4. The chart clearly 
 shows that in the early 20th century, Droughts and Floods dominated disaster deaths, while in recent decades their share has dropped dramatically. This tells a story of human progress in disaster resilience that the original 
 chart obscures behind too many colors and categories.
 <div class='tableauPlaceholder' id='viz1774931606699' style='position: relative'><noscript><a href='#'><img alt='The Composition of Disaster Deaths Has Shifted Over the Past Century ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Th&#47;TheCompositionofDisasterDeathsHasShiftedOverthePastCentury&#47;Sheet2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TheCompositionofDisasterDeathsHasShiftedOverthePastCentury&#47;Sheet2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Th&#47;TheCompositionofDisasterDeathsHasShiftedOverthePastCentury&#47;Sheet2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>

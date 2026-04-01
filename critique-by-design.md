@@ -14,45 +14,38 @@ it scored poorly on perceptibility and intuitiveness. The use of 11 different co
 on proportions rather than absolute numbers.
 
 ## Step three: Sketch a solution
+Based on my critique, I decided to move away from showing absolute death numbers and instead focus on the share of deaths by disaster type. I sketched a 100% stacked bar chart that would group minor disaster categories into a single "Other" category, leaving only four groups: Droughts, Floods, Earthquakes, and Other. This would reduce the color count from 11 to 4, making the chart much easier to read. I built an early draft in Tableau to test this approach before finalizing the design.
 
 ## Step four: Test the solution
 
-_Before you conduct your interviews, prepare a simple script.  Use this as a guide and as a way to take notes as you go forward. Come up with your own list of questions you want to ask for the selected visualization. Keep the questions broad so you can get the most value out of your feedback. Then, document answers to your questions here._
-
-Questions to ask (modify these for your own interviews): 
-
-- Can you tell me what you think this is?
-
-- Can you describe to me what this is telling you?
-
-- Is there anything you find surprising or confusing?
-
-- Who do you think is the intended audience for this?
-
-- Is there anything you would change or do differently?
-
-Results: 
-
-_Don't identify or share personally identifiable information (PII) about the people you spoke to._
-
-
 | Question | Interview 1 | Interview 2 |
 |----------|-------------|-------------|
-|          |             |             |
-|          |             |             |
+|  Is there anything surprising or confusing?        |      The stacking order is confusing, colored categories should be at the bottom       |     The title could more explicitly highlight the decline of droughts and floods        |
+|    Is there anything you would change?      |     Move colored categories to the bottom for easier comparison        |    Focus more explicitly on the positive story of progress         |
 |          |             |             |
 
 Synthesis: 
-
-_What patterns in the feedback emerge?  What did you learn from the feedback?  Based on this feedback, come up with what design changes you think might make the most sense in your final redesign._
-
+Both interviewees understood the main message of the chart. A common pattern was that the stacking order could be improved to make comparisons easier across decades. The second interviewee's suggestion to more explicitly 
+highlight the decline of droughts and floods was particularly valuable, as this is the most striking finding in the data. Based on this feedback, I considered reordering the stacked categories and refining the title to more 
+clearly communicate the story of human progress in disaster resilience.
 ## Step five: build the solution
-
-_Include and describe your final solution here. It's also a good idea to summarize your thoughts on the process overall. When you're done with the assignment, this page should all the items mentioned in the assignment page on Canvas(a link or screenshot of the original data visualization, documentation explaining your process, a summary of your wireframes and user feedback, your final, redesigned data visualization, etc.)._
-
+My final redesign is a 100% stacked bar chart built in Tableau Public. Compared to the original, it uses only four color categories, making the composition of disaster deaths easy to read at a glance. The chart clearly 
+shows that in the early 20th century, Droughts and Floods dominated disaster deaths, while in recent decades their share has dropped dramatically. This tells a story of human progress in disaster resilience that the original 
+chart obscures behind too many colors and categories.
+<div class='tableauPlaceholder' id='viz1774931606699' style='position: relative'><noscript><a href='#'><img alt='The Composition of Disaster Deaths Has Shifted Over the Past Century ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Th&#47;TheCompositionofDisasterDeathsHasShiftedOverthePastCentury&#47;Sheet2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TheCompositionofDisasterDeathsHasShiftedOverthePastCentury&#47;Sheet2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Th&#47;TheCompositionofDisasterDeathsHasShiftedOverthePastCentury&#47;Sheet2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
+<script type='text/javascript'>                    
+  var divElement = document.getElementById('viz1774931606699');                    
+  var vizElement = divElement.getElementsByTagName('object')[0]; 
+  vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+  var scriptElement = document.createElement('script');                    
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
 ## References
-_List any references you used here._
+Our World in Data. "Natural Disasters." 
+https://ourworldindata.org/natural-disasters
+EM-DAT, CRED / UCLouvain (2025). International Disaster Database.
 
 ## AI acknowledgements
-_If you used AI to help you complete this assignment (within the parameters of the instruction and course guidelines), detail your use of AI for this assignment here._
+No AI tools were used in completing this assignment.
 
